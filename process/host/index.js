@@ -12,7 +12,7 @@ const processHost = (host) =>{
   hostInfo.status = processStatus(host.status)
   hostInfo.address = processAddress(host.address)
   hostInfo.hostnames = processHostnames(host.hostnames)
-  processPorts(host.ports)
+  hostInfo.ports = processPorts(host.ports)
   return hostInfo
 }
 
