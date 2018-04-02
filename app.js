@@ -7,7 +7,7 @@ const xml2js = require('xml2js'),
 
 
 
-var unparsedXml = fs.readFileSync(__dirname + '/amazon').toString()
+var unparsedXml = fs.readFileSync(__dirname + '/home').toString()
 if (unparsedXml) {
   var ipInfo = {}
   var parser = new xml2js.Parser()
