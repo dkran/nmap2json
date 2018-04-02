@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/local/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.70 scan initiated Sat Mar 31 08:19:04 2018 as: nmap -O -A -v -top-ports 100 -oX amazon amazon.com -->
+<nmaprun scanner="nmap" args="nmap -O -A -v -top-ports 100 -oX amazon amazon.com" start="1522498744" startstr="Sat Mar 31 08:19:04 2018" version="7.70" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="100" services="7,9,13,21-23,25-26,37,53,79-81,88,106,110-111,113,119,135,139,143-144,179,199,389,427,443-445,465,513-515,543-544,548,554,587,631,646,873,990,993,995,1025-1029,1110,1433,1720,1723,1755,1900,2000-2001,2049,2121,2717,3000,3128,3306,3389,3986,4899,5000,5009,5051,5060,5101,5190,5357,5432,5631,5666,5800,5900,6000-6001,6646,7070,8000,8008-8009,8080-8081,8443,8888,9100,9999-10000,32768,49152-49157"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1522498744"/>
+<taskend task="NSE" time="1522498744"/>
+<taskbegin task="NSE" time="1522498744"/>
+<taskend task="NSE" time="1522498744"/>
+<taskbegin task="Ping Scan" time="1522498744"/>
+<taskend task="Ping Scan" time="1522498744" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1522498744"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1522498745"/>
+<taskbegin task="SYN Stealth Scan" time="1522498745"/>
+<taskend task="SYN Stealth Scan" time="1522498746" extrainfo="100 total ports"/>
+<taskbegin task="Service scan" time="1522498746"/>
+<taskend task="Service scan" time="1522498840" extrainfo="4 services on 1 host"/>
+<taskbegin task="Traceroute" time="1522498844"/>
+<taskend task="Traceroute" time="1522498850"/>
+<taskbegin task="Parallel DNS resolution of 12 hosts." time="1522498850"/>
+<taskend task="Parallel DNS resolution of 12 hosts." time="1522498850"/>
+<taskbegin task="NSE" time="1522498850"/>
+<taskend task="NSE" time="1522498855"/>
+<taskbegin task="NSE" time="1522498855"/>
+<taskend task="NSE" time="1522498855"/>
+<host starttime="1522498744" endtime="1522498855"><status state="up" reason="syn-ack" reason_ttl="235"/>
+<address addr="205.251.242.103" addrtype="ipv4"/>
+<hostnames>
+<hostname name="amazon.com" type="user"/>
+<hostname name="s3-console-us-standard.console.aws.amazon.com" type="PTR"/>
+</hostnames>
+<ports><extraports state="closed" count="95">
+<extrareasons reason="resets" count="95"/>
+</extraports>
+<port protocol="tcp" portid="25"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="smtp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="235"/><service name="http" product="Server" servicefp="SF-Port80-TCP:V=7.70%I=7%D=3/31%Time=5ABF7CC0%P=x86_64-apple-darwin13.4.0%r(GetRequest,165,&quot;HTTP/1\.1\x20301\x20Moved\x20Permanently\r\nServer:\x20Server\r\nDate:\x20Sat,\x2031\x20Mar\x202018\x2012:19:12\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20179\r\nConnection:\x20keep-alive\r\nLocation:\x20https:///\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;301\x20Moved\x20Permanently&lt;/title&gt;&lt;/head&gt;\r\n&lt;body\x20bgcolor=\&quot;white\&quot;&gt;\r\n&lt;center&gt;&lt;h1&gt;301\x20Moved\x20Permanently&lt;/h1&gt;&lt;/center&gt;\r\n&lt;hr&gt;&lt;center&gt;Server&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(HTTPOptions,165,&quot;HTTP/1\.1\x20301\x20Moved\x20Permanently\r\nServer:\x20Server\r\nDate:\x20Sat,\x2031\x20Mar\x202018\x2012:19:12\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20179\r\nConnection:\x20keep-alive\r\nLocation:\x20https:///\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;301\x20Moved\x20Permanently&lt;/title&gt;&lt;/head&gt;\r\n&lt;body\x20bgcolor=\&quot;white\&quot;&gt;\r\n&lt;center&gt;&lt;h1&gt;301\x20Moved\x20Permanently&lt;/h1&gt;&lt;/center&gt;\r\n&lt;hr&gt;&lt;center&gt;Server&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(FourOhFourRequest,188,&quot;HTTP/1\.1\x20301\x20Moved\x20Permanently\r\nServer:\x20Server\r\nDate:\x20Sat,\x2031\x20Mar\x202018\x2012:19:17\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20179\r\nConnection:\x20keep-alive\r\nLocation:\x20https:///nice%20ports%2C/Tri%6Eity\.txt%2ebak\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;301\x20Moved\x20Permanently&lt;/title&gt;&lt;/head&gt;\r\n&lt;body\x20bgcolor=\&quot;white\&quot;&gt;\r\n&lt;center&gt;&lt;h1&gt;301\x20Moved\x20Permanently&lt;/h1&gt;&lt;/center&gt;\r\n&lt;hr&gt;&lt;center&gt;Server&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(Help,139,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nServer:\x20Server\r\nDate:\x20Sat,\x2031\x20Mar\x202018\x2012:19:37\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20167\r\nConnection:\x20close\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;400\x20Bad\x20Request&lt;/title&gt;&lt;/head&gt;\r\n&lt;body\x20bgcolor=\&quot;white\&quot;&gt;\r\n&lt;center&gt;&lt;h1&gt;400\x20Bad\x20Request&lt;/h1&gt;&lt;/center&gt;\r\n&lt;hr&gt;&lt;center&gt;Server&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(SSLSessionReq,139,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nServer:\x20Server\r\nDate:\x20Sat,\x2031\x20Mar\x202018\x2012:19:37\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20167\r\nConnection:\x20close\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;400\x20Bad\x20Request&lt;/title&gt;&lt;/head&gt;\r\n&lt;body\x20bgcolor=\&quot;white\&quot;&gt;\r\n&lt;center&gt;&lt;h1&gt;400\x20Bad\x20Request&lt;/h1&gt;&lt;/center&gt;\r\n&lt;hr&gt;&lt;center&gt;Server&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;);" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  FourOhFourRequest: &#xa;    HTTP/1.1 301 Moved Permanently&#xa;    Server: Server&#xa;    Date: Sat, 31 Mar 2018 12:19:17 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 179&#xa;    Connection: keep-alive&#xa;    Location: https:///nice%20ports%2C/Tri%6Eity.txt%2ebak&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;301 Moved Permanently&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body bgcolor=&quot;white&quot;&gt;&#xa;    &lt;center&gt;&lt;h1&gt;301 Moved Permanently&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;hr&gt;&lt;center&gt;Server&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;&#xa;  GetRequest, HTTPOptions: &#xa;    HTTP/1.1 301 Moved Permanently&#xa;    Server: Server&#xa;    Date: Sat, 31 Mar 2018 12:19:12 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 179&#xa;    Connection: keep-alive&#xa;    Location: https:///&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;301 Moved Permanently&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body bgcolor=&quot;white&quot;&gt;&#xa;    &lt;center&gt;&lt;h1&gt;301 Moved Permanently&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;hr&gt;&lt;center&gt;Server&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;&#xa;  Help, SSLSessionReq: &#xa;    HTTP/1.1 400 Bad Request&#xa;    Server: Server&#xa;    Date: Sat, 31 Mar 2018 12:19:37 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 167&#xa;    Connection: close&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;400 Bad Request&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body bgcolor=&quot;white&quot;&gt;&#xa;    &lt;center&gt;&lt;h1&gt;400 Bad Request&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;hr&gt;&lt;center&gt;Server&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;"><elem key="FourOhFourRequest">&#xa;    HTTP/1.1 301 Moved Permanently&#xa;    Server: Server&#xa;    Date: Sat, 31 Mar 2018 12:19:17 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 179&#xa;    Connection: keep-alive&#xa;    Location: https:///nice%20ports%2C/Tri%6Eity.txt%2ebak&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;301 Moved Permanently&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body bgcolor=&quot;white&quot;&gt;&#xa;    &lt;center&gt;&lt;h1&gt;301 Moved Permanently&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;hr&gt;&lt;center&gt;Server&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;</elem>
+<elem key="GetRequest, HTTPOptions">&#xa;    HTTP/1.1 301 Moved Permanently&#xa;    Server: Server&#xa;    Date: Sat, 31 Mar 2018 12:19:12 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 179&#xa;    Connection: keep-alive&#xa;    Location: https:///&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;301 Moved Permanently&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body bgcolor=&quot;white&quot;&gt;&#xa;    &lt;center&gt;&lt;h1&gt;301 Moved Permanently&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;hr&gt;&lt;center&gt;Server&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;</elem>
+<elem key="Help, SSLSessionReq">&#xa;    HTTP/1.1 400 Bad Request&#xa;    Server: Server&#xa;    Date: Sat, 31 Mar 2018 12:19:37 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 167&#xa;    Connection: close&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;400 Bad Request&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body bgcolor=&quot;white&quot;&gt;&#xa;    &lt;center&gt;&lt;h1&gt;400 Bad Request&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;hr&gt;&lt;center&gt;Server&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="Server"><elem>Server</elem>
+</script><script id="http-title" output="Did not follow redirect to https://amazon.com/"><elem key="redirect_url">https://amazon.com/</elem>
+</script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="235"/><service name="https" product="Server" servicefp="SF-Port443-TCP:V=7.70%T=SSL%I=7%D=3/31%Time=5ABF7CC6%P=x86_64-apple-darwin13.4.0%r(GetRequest,B2C,&quot;HTTP/1\.1\x20503\x20Service\x20Temporarily\x20Unavailable\r\nServer:\x20Server\r\nDate:\x20Sat,\x2031\x20Mar\x202018\x2012:19:18\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x202671\r\nConnection:\x20close\r\nETag:\x20\&quot;5a6af39e-a6f\&quot;\r\n\r\n&lt;!-&#45;\n\x20\x20\x20\x20\x20\x20\x20\x20To\x20discuss\x20automated\x20access\x20to\x20Amazon\x20data\x20please\x20contact\x20api-services-support@amazon\.com\.\n\x20\x20\x20\x20\x20\x20\x20\x20For\x20information\x20about\x20migrating\x20to\x20our\x20APIs\x20refer\x20to\x20our\x20Marketplace\x20APIs\x20at\x20https://developer\.amazonservices\.com/ref=rm_5_sv,\x20or\x20our\x20Product\x20Advertising\x20API\x20at\x20https://affiliate-program\.amazon\.com/gp/advertising/api/detail/main\.html/ref=rm_5_ac\x20for\x20advertising\x20use\x20cases\.\n-&#45;&gt;\n&lt;!doctype\x20html&gt;\n&lt;html&gt;\n&lt;head&gt;\n\x20\x20&lt;meta\x20charset=\&quot;utf-8\&quot;&gt;\n\x20\x20&lt;meta\x20http-equiv=\&quot;x-ua-compatible\&quot;\x20content=\&quot;ie=edge\&quot;&gt;\n\x20\x20&lt;meta\x20name=\&quot;viewport\&quot;\x20content=\&quot;width=device-width,\x20initial-scale=1,\x20shrink-to-fit=no\&quot;&gt;\n\x20\x20&lt;title&gt;Sorry!\x20Something\x20went\x20wrong!&lt;/title&gt;\n\x20\x20&lt;style&gt;\n\x20\x20html,\x20body\x20{\n\x20\x20\x20\x20padding:\x200;\n\x20\x20\x20\x20margin:\x200\n\x20\x20}\n\n\x20\x20img\x20{\n\x20\x20\x20\x20bord&quot;)%r(HTTPOptions,139,&quot;HTTP/1\.1\x20405\x20Not\x20Allowed\r\nServer:\x20Server\r\nDate:\x20Sat,\x2031\x20Mar\x202018\x2012:19:18\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20167\r\nConnection:\x20close\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;405\x20Not\x20Allowed&lt;/title&gt;&lt;/head&gt;\r\n&lt;body\x20bgcolor=\&quot;white\&quot;&gt;\r\n&lt;center&gt;&lt;h1&gt;405\x20Not\x20Allowed&lt;/h1&gt;&lt;/center&gt;\r\n&lt;hr&gt;&lt;center&gt;Server&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(FourOhFourRequest,B2C,&quot;HTTP/1\.1\x20503\x20Service\x20Temporarily\x20Unavailable\r\nServer:\x20Server\r\nDate:\x20Sat,\x2031\x20Mar\x202018\x2012:19:18\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x202671\r\nConnection:\x20close\r\nETag:\x20\&quot;5a6af39e-a6f\&quot;\r\n\r\n&lt;!-&#45;\n\x20\x20\x20\x20\x20\x20\x20\x20To\x20discuss\x20automated\x20access\x20to\x20Amazon\x20data\x20please\x20contact\x20api-services-support@amazon\.com\.\n\x20\x20\x20\x20\x20\x20\x20\x20For\x20information\x20about\x20migrating\x20to\x20our\x20APIs\x20refer\x20to\x20our\x20Marketplace\x20APIs\x20at\x20https://developer\.amazonservices\.com/ref=rm_5_sv,\x20or\x20our\x20Product\x20Advertising\x20API\x20at\x20https://affiliate-program\.amazon\.com/gp/advertising/api/detail/main\.html/ref=rm_5_ac\x20for\x20advertising\x20use\x20cases\.\n-&#45;&gt;\n&lt;!doctype\x20html&gt;\n&lt;html&gt;\n&lt;head&gt;\n\x20\x20&lt;meta\x20charset=\&quot;utf-8\&quot;&gt;\n\x20\x20&lt;meta\x20http-equiv=\&quot;x-ua-compatible\&quot;\x20content=\&quot;ie=edge\&quot;&gt;\n\x20\x20&lt;meta\x20name=\&quot;viewport\&quot;\x20content=\&quot;width=device-width,\x20initial-scale=1,\x20shrink-to-fit=no\&quot;&gt;\n\x20\x20&lt;title&gt;Sorry!\x20Something\x20went\x20wrong!&lt;/title&gt;\n\x20\x20&lt;style&gt;\n\x20\x20html,\x20body\x20{\n\x20\x20\x20\x20padding:\x200;\n\x20\x20\x20\x20margin:\x200\n\x20\x20}\n\n\x20\x20img\x20{\n\x20\x20\x20\x20bord&quot;);" tunnel="ssl" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  FourOhFourRequest, GetRequest: &#xa;    HTTP/1.1 503 Service Temporarily Unavailable&#xa;    Server: Server&#xa;    Date: Sat, 31 Mar 2018 12:19:18 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 2671&#xa;    Connection: close&#xa;    ETag: &quot;5a6af39e-a6f&quot;&#xa;    &lt;!-&#45;&#xa;    discuss automated access to Amazon data please contact api-services-support@amazon.com.&#xa;    information about migrating to our APIs refer to our Marketplace APIs at https://developer.amazonservices.com/ref=rm_5_sv, or our Product Advertising API at https://affiliate-program.amazon.com/gp/advertising/api/detail/main.html/ref=rm_5_ac for advertising use cases.&#xa;    &lt;!doctype html&gt;&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&#xa;    &lt;meta charset=&quot;utf-8&quot;&gt;&#xa;    &lt;meta http-equiv=&quot;x-ua-compatible&quot; content=&quot;ie=edge&quot;&gt;&#xa;    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1, shrink-to-fit=no&quot;&gt;&#xa;    &lt;title&gt;Sorry! Something went wrong!&lt;/title&gt;&#xa;    &lt;style&gt;&#xa;    html, body {&#xa;    padding: 0;&#xa;    margin: 0&#xa;    bord&#xa;  HTTPOptions: &#xa;    HTTP/1.1 405 Not Allowed&#xa;    Server: Server&#xa;    Date: Sat, 31 Mar 2018 12:19:18 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 167&#xa;    Connection: close&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;405 Not Allowed&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body bgcolor=&quot;white&quot;&gt;&#xa;    &lt;center&gt;&lt;h1&gt;405 Not Allowed&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;hr&gt;&lt;center&gt;Server&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;"><elem key="FourOhFourRequest, GetRequest">&#xa;    HTTP/1.1 503 Service Temporarily Unavailable&#xa;    Server: Server&#xa;    Date: Sat, 31 Mar 2018 12:19:18 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 2671&#xa;    Connection: close&#xa;    ETag: &quot;5a6af39e-a6f&quot;&#xa;    &lt;!-&#45;&#xa;    discuss automated access to Amazon data please contact api-services-support@amazon.com.&#xa;    information about migrating to our APIs refer to our Marketplace APIs at https://developer.amazonservices.com/ref=rm_5_sv, or our Product Advertising API at https://affiliate-program.amazon.com/gp/advertising/api/detail/main.html/ref=rm_5_ac for advertising use cases.&#xa;    &lt;!doctype html&gt;&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&#xa;    &lt;meta charset=&quot;utf-8&quot;&gt;&#xa;    &lt;meta http-equiv=&quot;x-ua-compatible&quot; content=&quot;ie=edge&quot;&gt;&#xa;    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1, shrink-to-fit=no&quot;&gt;&#xa;    &lt;title&gt;Sorry! Something went wrong!&lt;/title&gt;&#xa;    &lt;style&gt;&#xa;    html, body {&#xa;    padding: 0;&#xa;    margin: 0&#xa;    bord</elem>
+<elem key="HTTPOptions">&#xa;    HTTP/1.1 405 Not Allowed&#xa;    Server: Server&#xa;    Date: Sat, 31 Mar 2018 12:19:18 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 167&#xa;    Connection: close&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;405 Not Allowed&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body bgcolor=&quot;white&quot;&gt;&#xa;    &lt;center&gt;&lt;h1&gt;405 Not Allowed&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;hr&gt;&lt;center&gt;Server&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="Server"><elem>Server</elem>
+</script><script id="http-title" output="Did not follow redirect to https://www.amazon.com/"><elem key="redirect_url">https://www.amazon.com/</elem>
+</script><script id="ssl-cert" output="Subject: commonName=www.amazon.com/organizationName=Amazon.com, Inc./stateOrProvinceName=Washington/countryName=US&#xa;Subject Alternative Name: DNS:amazon.com, DNS:amzn.com, DNS:uedata.amazon.com, DNS:us.amazon.com, DNS:www.amazon.com, DNS:www.amzn.com, DNS:corporate.amazon.com, DNS:buybox.amazon.com, DNS:iphone.amazon.com, DNS:yp.amazon.com, DNS:home.amazon.com, DNS:origin-www.amazon.com, DNS:buckeye-retail-website.amazon.com, DNS:huddles.amazon.com&#xa;Issuer: commonName=DigiCert Global CA G2/organizationName=DigiCert Inc/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2018-03-28T00:00:00&#xa;Not valid after:  2019-03-29T12:00:00&#xa;MD5:   f1ec db4a 7535 7221 103b 56de 8777 a9fb&#xa;SHA-1: 0e6b dcae 568e 3613 c6d1 73c9 b112 c357 ff59 67b2"><table key="subject">
+<elem key="countryName">US</elem>
+<elem key="commonName">www.amazon.com</elem>
+<elem key="localityName">Seattle</elem>
+<elem key="stateOrProvinceName">Washington</elem>
+<elem key="organizationName">Amazon.com, Inc.</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">DigiCert Global CA G2</elem>
+<elem key="countryName">US</elem>
+<elem key="organizationName">DigiCert Inc</elem>
+</table>
+<table key="pubkey">
+<elem key="modulus">userdata: 0x7d903d98</elem>
+<elem key="type">rsa</elem>
+<elem key="exponent">userdata: 0x7d903d58</elem>
+<elem key="bits">2048</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">keyid:24:6E:2B:2D:D0:6A:92:51:51:25:69:01:AA:9A:47:A6:89:E7:40:20&#xa;</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">4B:27:49:39:E2:F6:CB:18:D7:B3:E5:28:C0:5F:1E:41:6A:23:3F:F2</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:amazon.com, DNS:amzn.com, DNS:uedata.amazon.com, DNS:us.amazon.com, DNS:www.amazon.com, DNS:www.amzn.com, DNS:corporate.amazon.com, DNS:buybox.amazon.com, DNS:iphone.amazon.com, DNS:yp.amazon.com, DNS:home.amazon.com, DNS:origin-www.amazon.com, DNS:buckeye-retail-website.amazon.com, DNS:huddles.amazon.com</elem>
+</table>
+<table>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">&#xa;Full Name:&#xa;  URI:http://crl3.digicert.com/DigiCertGlobalCAG2.crl&#xa;&#xa;Full Name:&#xa;  URI:http://crl4.digicert.com/DigiCertGlobalCAG2.crl&#xa;</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.16.840.1.114412.1.1&#xa;  CPS: https://www.digicert.com/CPS&#xa;Policy: 2.23.140.1.2.2&#xa;</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">OCSP - URI:http://ocsp.digicert.com&#xa;CA Issuers - URI:http://cacerts.digicert.com/DigiCertGlobalCAG2.crt&#xa;</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1(0)&#xa;    Log ID    : BB:D9:DF:BC:1F:8A:71:B5:93:94:23:97:AA:92:7B:47:&#xa;                38:57:95:0A:AB:52:E8:1A:90:96:64:36:8E:1E:D1:85&#xa;    Timestamp : Mar 28 23:42:01.551 2018 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:FB:4D:3F:2F:CE:94:4F:A6:FD:0E:63:&#xa;                3C:AD:46:63:A3:45:7E:DE:F3:9A:E8:9C:E3:EF:28:40:&#xa;                06:5A:A8:68:82:02:20:14:C5:A8:4B:33:B6:64:CC:98:&#xa;                23:B7:71:B8:5D:0A:75:F2:89:9A:B7:5D:A9:61:32:5C:&#xa;                DB:DE:20:AF:46:8D:1E&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1(0)&#xa;    Log ID    : 6F:53:76:AC:31:F0:31:19:D8:99:00:A4:51:15:FF:77:&#xa;                15:1C:11:D9:02:C1:00:29:06:8D:B2:08:9A:37:D9:13&#xa;    Timestamp : Mar 28 23:42:01.878 2018 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:C3:03:31:01:5E:7C:05:E9:7A:8A:D7:&#xa;                F9:43:46:3F:4D:60:16:4C:98:EC:0F:48:2A:87:F3:0E:&#xa;                76:57:A7:2A:93:02:20:19:8D:C0:CF:42:1E:40:25:BB:&#xa;                47:B2:8D:73:0D:01:47:D4:07:66:81:E7:14:25:6D:A3:&#xa;                15:F2:04:47:B5:9C:A7</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notAfter">2019-03-29T12:00:00</elem>
+<elem key="notBefore">2018-03-28T00:00:00</elem>
+</table>
+<elem key="md5">f1ecdb4a75357221103b56de8777a9fb</elem>
+<elem key="sha1">0e6bdcae568e3613c6d173c9b112c357ff5967b2</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIHDDCCBfSgAwIBAgIQB9x9aURg5ke3bG546FliADANBgkqhkiG9w0BAQsFADBE&#xa;MQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMR4wHAYDVQQDExVE&#xa;aWdpQ2VydCBHbG9iYWwgQ0EgRzIwHhcNMTgwMzI4MDAwMDAwWhcNMTkwMzI5MTIw&#xa;MDAwWjBoMQswCQYDVQQGEwJVUzETMBEGA1UECBMKV2FzaGluZ3RvbjEQMA4GA1UE&#xa;BxMHU2VhdHRsZTEZMBcGA1UEChMQQW1hem9uLmNvbSwgSW5jLjEXMBUGA1UEAxMO&#xa;d3d3LmFtYXpvbi5jb20wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDn&#xa;k1pe8CXhfgbbiB0jhYzQJVuL9VFy+Ih59Ucj8XwrA03UBUJGR6JrzC+eVdILB8XS&#xa;hCT6X6Ct4/Avx2gfkxSIqQZk8YIFQg6Q1dRsUuTWYNlNMxnyE4KeHRPw4kMB3UJR&#xa;WYPpdB0uaalB/ItWxwGrGt6dTBNjZZI36X0O+76YFprmpRRk9Zzr7rIwVxA5uA+A&#xa;PjCCqZcCeVcwVTDssQc5LJsEfJDkMF/0kSbv2Svr23stfS6vhuEAm8IbnqFUgPLc&#xa;qMlZDbqkxqv8278bbdQQiXqsBXaiUiJJNt2jkCNkIzF2nRc9TKX8bhqPxKSR5Ifi&#xa;ymf7qxupfp4uepyAP+yVAgMBAAGjggPUMIID0DAfBgNVHSMEGDAWgBQkbist0GqS&#xa;UVElaQGqmkemiedAIDAdBgNVHQ4EFgQUSydJOeL2yxjXs+UowF8eQWojP/IwggEN&#xa;BgNVHREEggEEMIIBAIIKYW1hem9uLmNvbYIIYW16bi5jb22CEXVlZGF0YS5hbWF6&#xa;b24uY29tgg11cy5hbWF6b24uY29tgg53d3cuYW1hem9uLmNvbYIMd3d3LmFtem4u&#xa;Y29tghRjb3Jwb3JhdGUuYW1hem9uLmNvbYIRYnV5Ym94LmFtYXpvbi5jb22CEWlw&#xa;aG9uZS5hbWF6b24uY29tgg15cC5hbWF6b24uY29tgg9ob21lLmFtYXpvbi5jb22C&#xa;FW9yaWdpbi13d3cuYW1hem9uLmNvbYIhYnVja2V5ZS1yZXRhaWwtd2Vic2l0ZS5h&#xa;bWF6b24uY29tghJodWRkbGVzLmFtYXpvbi5jb20wDgYDVR0PAQH/BAQDAgWgMB0G&#xa;A1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjB3BgNVHR8EcDBuMDWgM6Axhi9o&#xa;dHRwOi8vY3JsMy5kaWdpY2VydC5jb20vRGlnaUNlcnRHbG9iYWxDQUcyLmNybDA1&#xa;oDOgMYYvaHR0cDovL2NybDQuZGlnaWNlcnQuY29tL0RpZ2lDZXJ0R2xvYmFsQ0FH&#xa;Mi5jcmwwTAYDVR0gBEUwQzA3BglghkgBhv1sAQEwKjAoBggrBgEFBQcCARYcaHR0&#xa;cHM6Ly93d3cuZGlnaWNlcnQuY29tL0NQUzAIBgZngQwBAgIwdAYIKwYBBQUHAQEE&#xa;aDBmMCQGCCsGAQUFBzABhhhodHRwOi8vb2NzcC5kaWdpY2VydC5jb20wPgYIKwYB&#xa;BQUHMAKGMmh0dHA6Ly9jYWNlcnRzLmRpZ2ljZXJ0LmNvbS9EaWdpQ2VydEdsb2Jh&#xa;bENBRzIuY3J0MAkGA1UdEwQCMAAwggEEBgorBgEEAdZ5AgQCBIH1BIHyAPAAdgC7&#xa;2d+8H4pxtZOUI5eqkntHOFeVCqtS6BqQlmQ2jh7RhQAAAWJu/V9PAAAEAwBHMEUC&#xa;IQD7TT8vzpRPpv0OYzytRmOjRX7e85ronOPvKEAGWqhoggIgFMWoSzO2ZMyYI7dx&#xa;uF0KdfKJmrddqWEyXNveIK9GjR4AdgBvU3asMfAxGdiZAKRRFf93FRwR2QLBACkG&#xa;jbIImjfZEwAAAWJu/WCWAAAEAwBHMEUCIQDDAzEBXnwF6XqK1/lDRj9NYBZMmOwP&#xa;SCqH8w52V6cqkwIgGY3Az0IeQCW7R7KNcw0BR9QHZoHnFCVtoxXyBEe1nKcwDQYJ&#xa;KoZIhvcNAQELBQADggEBACUvjTzVNZy0jzKkGxwHr4jPOFYvXZFrEmGl3KZFzItC&#xa;nF1wUouunz5HoZFHIv4HvBUZrUjf/luwff4wfyjV8jZ9x2kKK/FLShf9gEpef44N&#xa;LeN7nmt75+nc8N51Vc9BOCpqSRgAxe/ahBlyrooT5fRNxefBlv7buj4X3RsK2LQC&#xa;VEa/w6NPRgrAMtIv15xOcTnAd8kYEV/AjGGicdygS+YvbE8R99Wz0DSH+L0OdsRS&#xa;OJ6tY14eJIJ/oQyYRRL8RAXUy+lF5W5zMo6wVb9YXSOQhOARajkJRQ2fsD9WlXRh&#xa;7bj3sY6/7FeaN1qgx4EnsDigu7fPZmwuEJINvw4irEk=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="ERROR: Script execution failed (use -d to debug)"/><script id="tls-alpn" output="&#xa;  http/1.1"><elem>http/1.1</elem>
+</script><script id="tls-nextprotoneg" output="&#xa;  http/1.1"><elem>http/1.1</elem>
+</script></port>
+<port protocol="tcp" portid="554"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="7070"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="80"/>
+<portused state="closed" proto="tcp" portid="7"/>
+</os>
+<distance value="23"/>
+<tcpsequence index="265" difficulty="Good luck!" values="5E4675C3,4FC8D2D2,DA25B521,C2272C30,3E25F51F,C1465236"/>
+<ipidsequence class="Randomized" values="549F,5513,2C4F,A2E2,5636,B85D"/>
+<tcptssequence class="none returned (unsupported)"/>
+<trace port="587" proto="tcp">
+<hop ttl="1" ipaddr="10.0.1.1" rtt="5.30" host="Wireless_Broadband_Router.home"/>
+<hop ttl="2" ipaddr="100.40.188.1" rtt="9.90" host="lo0-100.PGHKNY-VFTTP-302.verizon-gni.net"/>
+<hop ttl="3" ipaddr="130.81.30.16" rtt="19.98" host="B4302.NYCMNY-LCR-21.verizon-gni.net"/>
+<hop ttl="5" ipaddr="140.222.235.41" rtt="11.62" host="0.et-9-3-0.GW3.NYC41.ALTER.NET"/>
+<hop ttl="6" ipaddr="157.130.0.238" rtt="13.00" host="amazon-gw.customer.alter.net"/>
+<hop ttl="7" ipaddr="52.93.1.111" rtt="16.80"/>
+<hop ttl="8" ipaddr="52.93.1.18" rtt="13.50"/>
+<hop ttl="10" ipaddr="54.239.109.64" rtt="70.29"/>
+<hop ttl="11" ipaddr="54.239.109.81" rtt="20.46"/>
+<hop ttl="12" ipaddr="52.93.24.200" rtt="18.55"/>
+<hop ttl="13" ipaddr="52.93.70.3" rtt="17.19"/>
+<hop ttl="23" ipaddr="205.251.242.103" rtt="12.92" host="s3-console-us-standard.console.aws.amazon.com"/>
+</trace>
+<times srtt="14900" rttvar="6825" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1522498856"/>
+<taskend task="NSE" time="1522498856"/>
+<taskbegin task="NSE" time="1522498856"/>
+<taskend task="NSE" time="1522498856"/>
+<runstats><finished time="1522498856" timestr="Sat Mar 31 08:20:56 2018" elapsed="112.92" summary="Nmap done at Sat Mar 31 08:20:56 2018; 1 IP address (1 host up) scanned in 112.92 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

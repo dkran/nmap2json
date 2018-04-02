@@ -1,0 +1,31 @@
+{
+  "name": "nmap-processor",
+  "version": "1.0.0",
+  "description": "Process xml files from nmap scans and scrape data for database collection",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dkran/nmap-processor.git"
+  },
+  "keywords": [
+    "nmap",
+    "webui",
+    "distributed",
+    "microprocesses"
+  ],
+  "author": "Daryl Kranec",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dkran/nmap-processor/issues"
+  },
+  "homepage": "https://github.com/dkran/nmap-processor#readme",
+  "dependencies": {
+    "fast-xml-parser": "^3.3.6",
+    "lodash": "^4.17.5",
+    "xml2js": "^0.4.19",
+    "xml2json": "^0.11.2"
+  }
+}

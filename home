@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/local/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.70 scan initiated Sat Mar 31 12:39:23 2018 as: nmap -O -A -top-ports 100 -oX home home.dkran.net -->
+<nmaprun scanner="nmap" args="nmap -O -A -top-ports 100 -oX home home.dkran.net" start="1522514363" startstr="Sat Mar 31 12:39:23 2018" version="7.70" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="100" services="7,9,13,21-23,25-26,37,53,79-81,88,106,110-111,113,119,135,139,143-144,179,199,389,427,443-445,465,513-515,543-544,548,554,587,631,646,873,990,993,995,1025-1029,1110,1433,1720,1723,1755,1900,2000-2001,2049,2121,2717,3000,3128,3306,3389,3986,4899,5000,5009,5051,5060,5101,5190,5357,5432,5631,5666,5800,5900,6000-6001,6646,7070,8000,8008-8009,8080-8081,8443,8888,9100,9999-10000,32768,49152-49157"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1522514364" endtime="1522514394"><status state="up" reason="echo-reply" reason_ttl="64"/>
+<address addr="173.62.7.172" addrtype="ipv4"/>
+<hostnames>
+<hostname name="home.dkran.net" type="user"/>
+<hostname name="Wireless_Broadband_Router" type="PTR"/>
+</hostnames>
+<ports><extraports state="closed" count="95">
+<extrareasons reason="resets" count="95"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ssh" product="OpenSSH" version="7.6p1 Debian 4" extrainfo="protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.6p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 c9:a2:a4:92:10:a2:a3:09:38:2c:48:66:67:92:26:c4 (RSA)&#xa;  256 7a:e6:3d:81:a5:b5:de:29:a1:9e:60:29:fe:82:e2:12 (ECDSA)&#xa;  256 91:93:12:59:51:db:86:64:5d:4f:25:b1:42:99:b5:4a (ED25519)"><table>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQDKqEfPiEOSzBWmRnh7WQK+B5ksUiTZBLK9g4JDIOBA82ev1zNa+UR4aOGu84OqimvHOUA4HNDk11kCxtaM0Mrk9VI9G2sCqXB7cjtGhradwC/oLyCGCe5vek/RwRgrcD7w/RrmxtAF0crgpBfEczbHO+FP/Sxz4T6mYen03q0ylkAV3/aGRWtJVp9f27iQQUsr2P4R+JxkQxNsv/RTQQTOZRNbX0dCIV7NW3zy0r9DtoEXZVxXUja107qyps47CyLWdrVbtR91khSkdDsGJPjgAKBMFW7P2QAFGDlC79x4BRF99ji/WY/UIcnxGQyobjNXDTKpGSTmGZVRZg23WEeD</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="bits">2048.0</elem>
+<elem key="fingerprint">c9a2a49210a2a309382c4866679226c4</elem>
+</table>
+<table>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBF84xl7KhyHvF4Xf0YnjKzWG+30qNyjzcoY1+vBR3IvQ5XaaRG8wLPacUPqb0EvR2Fg4E72XeDykRz1a/8Vh2Hw=</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="bits">256</elem>
+<elem key="fingerprint">7ae63d81a5b5de29a19e6029fe82e212</elem>
+</table>
+<table>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIFGC/05K6go3ASCbWVGfrNfYtLIIQf0djVDlSXpMSLzZ</elem>
+<elem key="type">ssh-ed25519</elem>
+<elem key="bits">256</elem>
+<elem key="fingerprint">9193125951db86645d4f25b14299b54a</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="23"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http" product="nginx" version="1.13.10" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx:1.13.10</cpe></service><script id="http-generator" output="Ghost 0.11"/><script id="http-robots.txt" output="1 disallowed entry &#xa;/ghost/"/><script id="http-server-header" output="nginx/1.13.10"><elem>nginx/1.13.10</elem>
+</script><script id="http-title" output="Defense by Software"><elem key="title">Defense by Software</elem>
+</script></port>
+<port protocol="tcp" portid="8081"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" product="Tornado httpd" version="4.5" method="probed" conf="10"><cpe>cpe:/a:tornadoweb:tornado:4.5</cpe></service><script id="http-robots.txt" output="1 disallowed entry &#xa;/"/><script id="http-server-header" output="TornadoServer/4.5"><elem>TornadoServer/4.5</elem>
+</script><script id="http-title" output="SickRage - Home&#xa;Requested resource was /home/"><elem key="title">SickRage - Home</elem>
+<elem key="redirect_url">/home/</elem>
+</script></port>
+<port protocol="tcp" portid="8443"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http" product="Verizon FIOS Actiontec http config" devicetype="broadband router" tunnel="ssl" method="probed" conf="10"/><script id="http-cookie-flags" output="&#xa;  /: &#xa;    rg_cookie_session_id: &#xa;      httponly flag not set"><table key="/">
+<table key="rg_cookie_session_id">
+<elem>httponly flag not set</elem>
+</table>
+</table>
+</script><script id="http-title" output="Verizon"><elem key="title">Verizon</elem>
+</script><script id="ssl-cert" output="Subject: commonName=ORname_Jungo: OpenRG Products Group/countryName=US&#xa;Not valid before: 2004-06-03T11:11:43&#xa;Not valid after:  2024-05-29T11:11:43"><table key="subject">
+<elem key="commonName">ORname_Jungo: OpenRG Products Group</elem>
+<elem key="countryName">US</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">ORname_Jungo: OpenRG Products Group</elem>
+<elem key="countryName">US</elem>
+</table>
+<table key="pubkey">
+<elem key="exponent">userdata: 0x7ef4a838</elem>
+<elem key="modulus">userdata: 0x7ef4a9f8</elem>
+<elem key="bits">1024</elem>
+<elem key="type">rsa</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:TRUE, pathlen:5</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Non Repudiation, Key Encipherment, Data Encipherment, Certificate Sign</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Client Authentication, Code Signing, E-mail Protection, TLS Web Server Authentication</elem>
+</table>
+<table>
+<elem key="name">Netscape Comment</elem>
+<elem key="value">Jungo OpenRG Products Group standard certificate</elem>
+</table>
+<table>
+<elem key="name">Netscape Cert Type</elem>
+<elem key="value">SSL Client, SSL Server, SSL CA</elem>
+</table>
+</table>
+<elem key="sig_algo">md5WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notAfter">2024-05-29T11:11:43</elem>
+<elem key="notBefore">2004-06-03T11:11:43</elem>
+</table>
+<elem key="md5">ec28c2972c7c6a82ec53e3e285ea6fd2</elem>
+<elem key="sha1">438833c094f6afc864c60e4a6f57e9f4d1281411</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIClTCCAf6gAwIBAgIBADANBgkqhkiG9w0BAQQFADA7MQswCQYDVQQGEwJVUzEs&#xa;MCoGA1UEAxQjT1JuYW1lX0p1bmdvOiBPcGVuUkcgUHJvZHVjdHMgR3JvdXAwHhcN&#xa;MDQwNjAzMTExMTQzWhcNMjQwNTI5MTExMTQzWjA7MQswCQYDVQQGEwJVUzEsMCoG&#xa;A1UEAxQjT1JuYW1lX0p1bmdvOiBPcGVuUkcgUHJvZHVjdHMgR3JvdXAwgZ8wDQYJ&#xa;KoZIhvcNAQEBBQADgY0AMIGJAoGBAM49r7D/ajki5azd5XYxVcSnKoth9lJxvI+m&#xa;vaZjzORt0oLoMWrMbpwFjtLTqqhtWNeY6BAyShWg7yKFsPU0HpX/jHIOAzAkny5J&#xa;+loH8nLN596g3P0ZyD6z7Ckqgbzg9MfJ9XLrExMLBn6oLboksY+q67+5zASWMfLR&#xa;ZVg+Zv1VAgMBAAGjgagwgaUwDwYDVR0TBAgwBgEB/wIBBTALBgNVHQ8EBAMCAvQw&#xa;MQYDVR0lBCowKAYIKwYBBQUHAwIGCCsGAQUFBwMDBggrBgEFBQcDBAYIKwYBBQUH&#xa;AwEwPwYJYIZIAYb4QgENBDIWMEp1bmdvIE9wZW5SRyBQcm9kdWN0cyBHcm91cCBz&#xa;dGFuZGFyZCBjZXJ0aWZpY2F0ZTARBglghkgBhvhCAQEEBAMCAsQwDQYJKoZIhvcN&#xa;AQEEBQADgYEAntbWzY/kUhqtd5lN+ZEY2gYSkt9fWoiLZod9hgMs14I+JGRWuRD1&#xa;re93wvlF1FFvxJOkz2MLc0dkR0z0/W36z7Tw7ypJU/81dynta9yIWLSywdn1/Y6A&#xa;7V6BwyQFRuJlg2/nDP+tUltc6cXbUe8GdTm2IATAzER8OKGRbBMtXqs=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="2018-03-31T16:39:49+00:00; -1s from scanner time."><elem key="date">2018-03-31T16:39:49+00:00</elem>
+<elem key="delta">-1.0</elem>
+</script><script id="ssl-known-key" output="Found in Little Black Box 0.1 - http://code.google.com/p/littleblackbox/ (SHA-1: 4388 33c0 94f6 afc8 64c6 0e4a 6f57 e9f4 d128 1411)"><elem key="section">Little Black Box 0.1 - http://code.google.com/p/littleblackbox/</elem>
+<elem key="sha1">438833c094f6afc864c60e4a6f57e9f4d1281411</elem>
+</script><script id="sslv2" output="&#xa;  SSLv2 supported&#xa;  ciphers: &#xa;    SSL2_RC2_128_CBC_EXPORT40_WITH_MD5&#xa;    SSL2_RC4_128_EXPORT40_WITH_MD5&#xa;    SSL2_DES_64_CBC_WITH_MD5&#xa;    SSL2_RC4_64_WITH_MD5&#xa;    SSL2_RC4_128_WITH_MD5&#xa;    SSL2_RC2_128_CBC_WITH_MD5&#xa;    SSL2_DES_192_EDE3_CBC_WITH_MD5"><elem>SSLv2 supported</elem>
+<table key="ciphers">
+<elem>SSL2_RC2_128_CBC_EXPORT40_WITH_MD5</elem>
+<elem>SSL2_RC4_128_EXPORT40_WITH_MD5</elem>
+<elem>SSL2_DES_64_CBC_WITH_MD5</elem>
+<elem>SSL2_RC4_64_WITH_MD5</elem>
+<elem>SSL2_RC4_128_WITH_MD5</elem>
+<elem>SSL2_RC2_128_CBC_WITH_MD5</elem>
+<elem>SSL2_DES_192_EDE3_CBC_WITH_MD5</elem>
+</table>
+</script></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="22"/>
+<portused state="closed" proto="tcp" portid="7"/>
+<portused state="closed" proto="udp" portid="33549"/>
+<osmatch name="Linux 3.2 - 4.9" accuracy="98" line="65105">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="98"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="98"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.2" accuracy="95" line="64455">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:3.2</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.32 - 3.10" accuracy="95" line="56381">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.1" accuracy="95" line="62708">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:3.1</cpe></osclass>
+</osmatch>
+<osmatch name="AXIS 210A or 211 Network Camera (Linux 2.6.17)" accuracy="94" line="61606">
+<osclass type="webcam" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6.17</cpe></osclass>
+<osclass type="webcam" vendor="AXIS" osfamily="embedded" accuracy="94"><cpe>cpe:/h:axis:210a_network_camera</cpe><cpe>cpe:/h:axis:211_network_camera</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.10 - 4.11" accuracy="94" line="63230">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.16" accuracy="93" line="63962">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:3.16</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.24 - 2.6.36" accuracy="93" line="52392">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="ASUS RT-N56U WAP (Linux 3.4)" accuracy="93" line="8344">
+<osclass type="WAP" vendor="Asus" osfamily="embedded" accuracy="93"><cpe>cpe:/h:asus:rt-n56u</cpe></osclass>
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:3.4</cpe></osclass>
+</osmatch>
+<osmatch name="Symantec Web Gateway 5.2.0.361 (Linux 2.6)" accuracy="93" line="59969">
+<osclass type="security-misc" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+<osclass type="security-misc" vendor="Symantec" osfamily="embedded" accuracy="93"><cpe>cpe:/a:symantec:web_gateway:5.2</cpe></osclass>
+</osmatch>
+<osfingerprint fingerprint="OS:SCAN(V=7.70%E=4%D=3/31%OT=22%CT=7%CU=33549%PV=N%DS=1%DC=T%G=Y%TM=5ABFB9D&#xa;OS:A%P=x86_64-apple-darwin13.4.0)SEQ(SP=9E%GCD=1%ISR=BF%TI=Z%CI=Z%II=I%TS=A&#xa;OS:)OPS(O1=M5B4ST11NWA%O2=M5B4ST11NWA%O3=M5B4NNT11NWA%O4=M5B4ST11NWA%O5=M5B&#xa;OS:4ST11NWA%O6=M5B4ST11)WIN(W1=7120%W2=7120%W3=7120%W4=7120%W5=7120%W6=7120&#xa;OS:)ECN(R=Y%DF=Y%T=40%W=7210%O=M5B4NNSNWA%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+&#xa;OS:%F=AS%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)&#xa;OS:T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A&#xa;OS:=Z%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%D&#xa;OS:F=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=4&#xa;OS:0%CD=S)&#xa;"/>
+</os>
+<uptime seconds="4003899" lastboot="Tue Feb 13 03:28:15 2018"/>
+<distance value="1"/>
+<tcpsequence index="162" difficulty="Good luck!" values="D8B67EEB,D8CBF2E5,D8E3CA49,D8FE05A4,D915E9FF,D93015AB"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="1000HZ" values="EEA68E9F,EEA68EF9,EEA68F5D,EEA68FCB,EEA69030,EEA6909D"/>
+<hostscript><script id="clock-skew" output="mean: -1s, deviation: 0s, median: -1s"><elem key="mean">-1</elem>
+<elem key="stddev">0</elem>
+<elem key="median">-1</elem>
+</script></hostscript><trace port="111" proto="tcp">
+<hop ttl="1" ipaddr="173.62.7.172" rtt="6.53" host="Wireless_Broadband_Router"/>
+</trace>
+<times srtt="8300" rttvar="6651" to="100000"/>
+</host>
+<runstats><finished time="1522514394" timestr="Sat Mar 31 12:39:54 2018" elapsed="32.02" summary="Nmap done at Sat Mar 31 12:39:54 2018; 1 IP address (1 host up) scanned in 32.02 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
