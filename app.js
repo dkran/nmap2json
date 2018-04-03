@@ -12,7 +12,7 @@ if (unparsedXml) {
   var ipInfo = {}
   var parser = new xml2js.Parser()
   parser.parseString(unparsedXml, (err, result) => {
-    console.log(inspect(processor(result.nmaprun), false, 20))
+    console.log(inspect(processor(result.nmaprun), false, 25))
     //console.log(inspect(result.nmaprun[base][0], false, 20))   
   })
 }
