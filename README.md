@@ -12,3 +12,11 @@ I'm progressing on this very rapidly, and getting all the output we will need my
 ### Goals:
  - Finish processing the rest of the stats of different types of scans.  `host.address` might be an array if there are IPv6 addresses.
  - Ultimate goal is to use this in a microservice for my https://github.com/nmap-webui to process ~10 nmap scans at a time (seems to be the node limit), and maybe multiple processes. Meanwhile I figured us JS folk could use JSON output from nmap instead of XML.
+
+#### Usage:
+```
+var processor = require('nmap2json')
+processor(unparsedxml, (err, result)=>{
+  console.log(result)
+})
+```
