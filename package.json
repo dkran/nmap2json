@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dkran/nmap-processor.git"
+    "url": "git+https://github.com/dkran/nmap2json.git"
   },
   "keywords": [
     "nmap",
@@ -20,9 +20,9 @@
   "author": "Daryl Kranec",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/dkran/nmap-processor/issues"
+    "url": "https://github.com/dkran/nmap2json/issues"
   },
-  "homepage": "https://github.com/dkran/nmap-processor#readme",
+  "homepage": "https://github.com/dkran/nmap2json#readme",
   "dependencies": {
     "lodash": "^4.17.5",
     "xml2js": "^0.4.19"
