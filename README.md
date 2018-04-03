@@ -1,5 +1,7 @@
 ## nmap2json
 
+ - I could really use some help with this project, without messing up the schema.
+
 This project has been under development to scrape ALL data from nmap to json via an `xml2js` output into a very usable format.  `xml2js` outputs quite ugly stuff to work with in javascript.  This script should eventually make 
 I'm progressing on this very rapidly, and getting all the output we will need my grey hats. Right now, the following are parsed:
 
