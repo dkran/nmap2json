@@ -7,6 +7,7 @@ module.exports = (nm) => {
   const baseKeys = _.keys(nm)
   console.log(baseKeys)
   var ip = {}
+  var count = 0;
   _.forEach(baseKeys, function (base) {
     if (base === '$') ip.scan = nm[base]
     if (base === 'host') ip.host = processHost(nm.host[0])
