@@ -1,6 +1,6 @@
 {
   "name": "nmap2json",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "description": "Process xml files from nmap scans and scrape data for database collection",
   "main": "app.js",
   "scripts": {
@@ -12,10 +12,7 @@
   },
   "keywords": [
     "nmap",
-    "json",
-    "webui",
-    "distributed",
-    "microprocesses"
+    "json"
   ],
   "author": "Daryl Kranec",
   "license": "ISC",
