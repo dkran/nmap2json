@@ -1,7 +1,7 @@
 const inspect = require('util').inspect
 
 const processTimes = (times)=>{
-  console.log(inspect(times, false, null))
+  return times[0].$
 }
 
 module.exports = processTimes

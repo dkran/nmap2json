@@ -9,6 +9,8 @@ const processOS = require('./os'),
   processIpId = require('./ipidsequence'),
   processTCPTS = require('./tcptssequence'),
   processHS = require('./hostscript')
+  processTrace = require('./trace')
+  processTimes = require('./times')
   _ = require('lodash')
 
 const processHost = (host) =>{
@@ -25,6 +27,8 @@ const processHost = (host) =>{
   hostInfo.ipidsequence = processIpId(host.ipidsequence)
   hostInfo.tcptssequence = processTCPTS(host.tcptssequence)
   hostInfo.hostscript = processHS(host.hostscript)
+  hostInfo.times = processTimes(host.times)
+  hostInfo.trace = processTrace(host.trace)
   return hostInfo
 }
 
