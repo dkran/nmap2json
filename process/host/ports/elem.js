@@ -1,12 +1,13 @@
 const processElem = (elem)=>{
-  var newElem = null
+  var newElem = []
   for(i = 0; i < elem.length; i++){
     if(typeof(elem[i]) === 'object'){
       newElem = {}
-      newElem[elem[i].$.key] = elem[i]._
+      if(elem[i].$.key && elem[i]._) newElem[elem[i].$.key] = elem[i]._
     }
     if(typeof(elem[i]) === 'string'){
-      newElem = elem[i]
+      if(elem.length === 1) newElem = elem[i]
+      if(elem.length > 1) newElem.push(elem[i])
     }
   }
   return newElem

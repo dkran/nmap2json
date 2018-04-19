@@ -1,9 +1,14 @@
-const processOS = require('./os')
-const processStatus = require('./status')
-const processAddress = require('./address')
-const processHostnames = require('./hostnames')
-const processPorts = require('./ports')
-const _ = require('lodash')
+const processOS = require('./os'),
+  processStatus = require('./status'),
+  processAddress = require('./address'),
+  processHostnames = require('./hostnames'),
+  processPorts = require('./ports'),
+  processUptime = require('./uptime'),
+  processDistance = require('./distance'),
+  processTCPSequence = require('./tcpsequence'),
+  processIpId = require('./ipidsequence'),
+  processTCPTS = require('./tcptssequence')
+  _ = require('lodash')
 
 const processHost = (host) =>{
   console.log(_.keys(host))
@@ -13,6 +18,11 @@ const processHost = (host) =>{
   hostInfo.address = processAddress(host.address)
   hostInfo.hostnames = processHostnames(host.hostnames)
   hostInfo.ports = processPorts(host.ports)
+  hostInfo.uptime = processUptime(host.uptime)
+  hostInfo.distance = processDistance(host.distance)
+  hostInfo.tcpsequence = processTCPSequence(host.tcpsequence)
+  hostInfo.ipidsequence = processIpId(host.ipidsequence)
+  hostInfo.tcptssequence = processTCPTS(host.tcptssequence)
   return hostInfo
 }
 

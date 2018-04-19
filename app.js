@@ -8,7 +8,7 @@ var parseNmap = (unparsedXml, cb) => {
     var parser = new xml2js.Parser()
     parser.parseString(unparsedXml, (err, result) => {
       if (err) cb(err)
-      result = processor(result)
+      result = processor(result.nmaprun)
       if (result) cb(null, result)
     })
   }
