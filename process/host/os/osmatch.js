@@ -8,7 +8,7 @@ const processOSMatch = (osmatch)=>{
     var classLength = osmatch[i].osclass.length
     for(var j = 0; j < classLength; j++){
       os.product = osmatch[i].osclass[j].$
-      os.cpe = osmatch[i].osclass[j].cpe[0]
+      if(os.cpe) os.cpe = osmatch[i].osclass[j].cpe[0]
     }
     newosmatch.push(os)
   }

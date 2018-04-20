@@ -1,6 +1,6 @@
 {
   "name": "nmap2json",
-  "version": "0.8.0",
+  "version": "0.8.5",
   "description": "Process xml files from nmap scans and scrape data for database collection",
   "main": "app.js",
   "scripts": {
