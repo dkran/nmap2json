@@ -8,10 +8,10 @@ module.exports = (nm) => {
   console.log(baseKeys)
   var ip = {}
   var count = 0;
-  _.forEach(baseKeys, function (base) {
-    if (base === '$') ip.scan = nm[base]
-    if (base === 'host') ip.host = processHost(nm.host[0])
-    if (base === 'runstats') ip.runstats = runstats(nm.runstats)
+  _.forIn(nm, function (base, key) {
+    if(key === '$') ip.scan = nm.$
+    if(key === 'host') ip.host = processHost(nm.host[0])
+    if(key === 'runstats') ip.runstats = runstats(nm.runstats)
   })
   return ip
 }
