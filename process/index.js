@@ -5,7 +5,6 @@ const _ = require('lodash')
 
 module.exports = (nm) => {
   const baseKeys = _.keys(nm)
-  console.log(baseKeys)
   var ip = {}
   var count = 0;
   _.forIn(nm, function (base, key) {

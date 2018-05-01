@@ -14,7 +14,6 @@ const processOS = require('./os'),
   _ = require('lodash')
 
 const processHost = (host) =>{
-  console.log(_.keys(host))
   var hostInfo = {}
   if(host.os) hostInfo.os = processOS(host.os)
   if(host.status) hostInfo.status = processStatus(host.status)

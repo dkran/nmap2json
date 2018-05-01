@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/dkran/nmap2json#readme",
   "dependencies": {
+    "hoek": "^5.0.3",
     "lodash": "^4.17.5",
     "xml2js": "^0.4.19"
   }
