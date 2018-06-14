@@ -3,8 +3,10 @@ const inspect = require('util').inspect,
 
 const processPorts = (ports)=>{
   var newports = {ports: []}, length = ports[0]
-  if(ports[0].extraports) newports.extraports = ports[0].extraports[0].$
-  if(ports[0].extraports[0].extrareasons) newports.extrareasons = ports[0].extraports[0].extrareasons[0].$
+  if(ports[0].extraports){
+    newports.extraports = ports[0].extraports[0].$
+    if(ports[0].extraports[0].extrareasons) newports.extrareasons = ports[0].extraports[0].extrareasons[0].$
+  }
   if(ports[0].port){
     for(var i = 0; i < ports[0].port.length; i++){
       newports.ports[i] = {}
